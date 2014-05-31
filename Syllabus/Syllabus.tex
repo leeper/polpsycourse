@@ -1,0 +1,86 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{graphicx,setspace,hyperref,mdwlist,comment}
+% mini table of contents
+\usepackage{minitoc}
+\dosecttoc % make section toc
+\setcounter{secttocdepth}{2} % subsection depth
+\renewcommand{\stctitle}{} % no title
+\nostcpagenumbers
+
+\setlength{\marginparwidth}{.5in}
+\usepackage{natbib}
+% Two lines to create in-text full citations for a syllabus
+% And comment out my other standard bibtex commands
+\usepackage{bibentry}
+\newcommand{\reading}[2][]{\noindent --{#1} \bibentry{#2}.\vspace{.25em}\\}
+\newcommand{\seealso}{\noindent \emph{See Also:}\\}
+\newcommand{\topic}[1]{\noindent \textbf{#1}\\}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={Syllabus: Advanced Political Psychology Seminar},    % title
+    pdfauthor={Thomas J. Leeper},     % author
+    pdfsubject={Political Science},   % subject of the document
+    pdfnewwindow=true,      % links in new window
+    pdfborder={0 0 0}
+}
+
+\title{Advanced Political Psychology Seminar}
+\author{Thomas J. Leeper\\
+Department of Political Science and Government\\
+Aarhus University}
+
+\begin{document}
+\nobibliography*
+
+\maketitle
+
+\faketableofcontents
+
+%\section{Introduction}
+
+\section{Objectives}
+The learning objectives for the course are as follows. By the end of the course, students should be able to:
+
+\begin{enumerate}
+\item Objectives Here
+\end{enumerate}
+
+\section{Exam}
+Students will be evaluated via a home essay that states an original research question, introduces theory to address that question, and designs an appropriate empirical test to assess theorized expectations.
+
+\section{Reading Material}
+The assigned material for the course consists of empirical research articles, all of which are available online.
+
+\clearpage
+\section{Schedule}
+The general schedule for the course is as follows. Details on the readings for each week are provided on the following pages.
+
+\secttoc
+
+\clearpage
+
+
+\clearpage
+\subsection{Week 1}
+\emph{Topic}
+\vspace{1em}
+
+\subsubsection*{Readings}
+
+\seealso
+
+
+
+% load bibtex, but don't generate a bibliography
+\bibliographystyle{plain}
+\nobibliography{Syllabus}
+
+\end{document}
